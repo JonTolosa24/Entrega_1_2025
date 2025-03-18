@@ -1,5 +1,5 @@
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -7,8 +7,8 @@ body {
 /*------------------header de la pagina-----------------------*/
 
 .img_logo {
-    height: auto; 
-    width: 125px;     
+    height: auto;
+    width: 125px;
 }
 
 .indice {
@@ -16,26 +16,25 @@ body {
     background-color: #ddd;
     display: flex;
     justify-content: space-between;
-    padding: 5px;
     margin: 0px;
-
+    padding: 5px;
 }
 
 /*-----navegación de paginas dentro del header------*/
 /*Para navegar por las ventanas de la pagina web*/
 
 .barra_navegacion {
-    text-align: center;
     padding: 5px;
+    text-align: center;
 }
 
 .barra_navegacion ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .barra_navegacion ul li {
@@ -48,8 +47,8 @@ body {
 
 .barra_navegacion ul li a {
     color: #007bff;
-    text-decoration: none;
     padding: 5px;
+    text-decoration: none;
 }
 
 .barra_navegacion ul li a:hover {
@@ -62,8 +61,8 @@ body {
     color: #004fa3;
 }
 
-
 /*----------buscador de la pagina en el header------*/
+
 .buscador {
     padding: 10px;
     text-align: center;
@@ -71,22 +70,22 @@ body {
 
 .buscador fieldset {
     border: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 .buscador input[type="text"] { /*agregar estilos a un input de tipo texto, en este caso el buscador*/
-    width: 180px;
-    padding: 6px;
-    font-size: 14px;
     border: 2px solid #ccc;
-    border-radius: 5px; 
-    outline: none;
+    border-radius: 5px;
     color: rgb(77, 77, 77);
+    font-size: 14px;
+    outline: none;
+    padding: 6px;
+    width: 180px;
 }
 
 .buscador:hover input[type="text"] {
-    border-color: #007bff; 
+    border-color: #007bff;
 }
 
 /*-------------------Medias Queries (Responsive Design)-------------------*/
@@ -96,11 +95,11 @@ body {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .img_logo {
-        width: 100px; /* Reducir tamaño del logo en pantallas más pequeñas */
+        width: 100px; 
     }
-    
+
     .barra_navegacion ul {
         flex-direction: column;
         padding: 0;
@@ -111,27 +110,27 @@ body {
     }
 
     .buscador input[type="text"] {
-        width: 100%;
-        padding: 10px;
         font-size: 16px;
+        padding: 10px;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 480px) {
-        
+
     .img_logo {
         width: 80px;
     }
-    
+
     .barra_navegacion ul li {
         font-size: 16px;
         margin: 10px 0;
     }
 
     .buscador input[type="text"] {
-        width: 100%;
-        padding: 12px;
         font-size: 18px;
+        padding: 12px;
+        width: 100%;
     }
 
     .indice {
@@ -140,37 +139,39 @@ body {
 }
 
 /*----------------------------MAIN------------------------*/
-#contenido_main{
+
+#contenido_main {
     display: inline-flex;
     width: 100%;
 }
 
 /*-------------lista lateral---------*/
 /*Para navegar entre los componentes y tendencias de SMC*/
+
 #contenido_lateral {
-    color: rgb(77, 77, 77);
     background-color: #f4f4f4;
-    padding: 15px;
-    flex: 1; 
+    color: rgb(77, 77, 77);
     display: flex;
     flex-direction: column;
+    flex: 1;
+    padding: 15px;
 }
 
 #lista_lateral {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 #lista_lateral li {
     background-color: #ddd;
-    padding: 10px;
-    margin: 5px 0;
     border-radius: 5px; /*borde redondeado con un radio de 5px en este caso*/
+    margin: 5px 0;
+    padding: 10px;
     text-align: center;
 }
 
-#lista_lateral li a{
+#lista_lateral li a {
     color: rgb(77, 77, 77);
     text-decoration: none;
 }
@@ -179,13 +180,12 @@ body {
     background-color: #007bff;
 }
 
-#lista_lateral li a:hover{
+#lista_lateral li a:hover {
     color: white;
 }
 
 /*--------contenido principal de la pagina---------*/
 /*Articulos con textos e imagenes de la pagina principal*/
-
 
 #contenido_principal {
     flex: 5;
@@ -194,56 +194,54 @@ body {
 }
 
 #contenido_principal article {
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    text-align: justify; 
-    padding: 20px;
+    align-items: center;
     background-color: #f9f9f9;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
+    padding: 20px;
+    text-align: justify;
 }
 
-
 #contenido_principal header h2 {
-    color: #007bff; 
+    color: #007bff;
     font-size: 24px;
     margin-bottom: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 .img_banner {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto; 
     border-radius: 10px;
+    display: block;
+    height: auto;
+    margin: 20px auto;
+    width: 100%;
 }
 
-.img_derecha, .img_izquierda {
-    width: 250px;
-    height: auto;
+.img_derecha,
+.img_izquierda {
     border-radius: 10px;
+    height: auto;
+    width: 250px;
 }
 
 .img_derecha {
-    order: 2; 
-    margin-left: 20px; 
+    margin-left: 20px;
+    order: 2;
 }
 
 .img_izquierda {
-    order: -1; 
-    margin-right: 20px; 
+    margin-right: 20px;
+    order: -1;
 }
 
 #contenido_principal article img {
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
-
-
-
 /* ----------------------Contenido principal de PRODUCTOS--------------------*/
+
 #contenido_principal_producto {
     align-items: center;
     flex: 5;
@@ -255,9 +253,9 @@ body {
 
 .fila_productos {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -288,78 +286,79 @@ body {
     text-align: center;
 }
 
-
 /* tamaño movil */
+
 @media (max-width: 768px) {
     .producto {
-        width: 100%; 
+        width: 100%;
     }
 }
 
 /* ----------------------Contenido principal de FORMULARIO--------------------*/
+
 #contenido_principal_formulario {
     align-items: center;
+    color: rgb(77, 77, 77);
     flex: 5;
     flex-direction: column;
     margin: 20px;
     padding: 20px;
     width: 70%;
-    color: rgb(77, 77, 77);
-}
-
-#contenido_principal_formulario h2 {
-    text-align: center;
-    color: #007bff;
-    font-size: 20px;
-}
-
-#contenido_principal_formulario label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-}
-
-#contenido_principal_formulario input{
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contenido_principal_formulario textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 #contenido_principal_formulario button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 15px;
     background-color: #007bff;
-    color: white;
     border: none;
     border-radius: 5px;
+    color: white;
     cursor: pointer;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
 }
 
 #contenido_principal_formulario button:hover {
     background-color: #0056b3;
 }
 
+#contenido_principal_formulario h2 {
+    color: #007bff;
+    font-size: 20px;
+    text-align: center;
+}
+
+#contenido_principal_formulario input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+}
+
+#contenido_principal_formulario label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#contenido_principal_formulario textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+}
+
 /*----------------Contenido principal de USUARIOS-----------------*/
 
 #contenido_principal_usuarios {
     align-items: center;
+    color: rgb(77, 77, 77);
     flex: 5;
     flex-direction: column;
     margin: 20px;
     padding: 20px;
     width: 70%;
-    color: rgb(77, 77, 77);
 }
 
 #contenido_principal_usuarios h2 {
@@ -368,14 +367,14 @@ body {
 }
 
 .tabla-usuarios {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
     background-color: #f8f8f8;
+    margin-bottom: 20px;
     overflow: hidden;
+    width: 100%;
 }
 
-.tabla-usuarios th, .tabla-usuarios td {
+.tabla-usuarios th,
+.tabla-usuarios td {
     border: 1px solid #007bff;
     padding: 10px;
     text-align: left;
@@ -386,19 +385,15 @@ body {
     color: white;
 }
 
-.tabla-usuarios tr:nth-child(even) {
-    background-color: #e6f0ff;
-}
-
 .tabla-productos {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
     background-color: #f8f8f8;
+    margin-bottom: 20px;
     overflow: hidden;
+    width: 100%;
 }
 
-.tabla-productos th, .tabla-productos td {
+.tabla-productos th,
+.tabla-productos td {
     border: 1px solid #007bff;
     padding: 10px;
     text-align: left;
@@ -409,28 +404,28 @@ body {
     color: white;
 }
 
-.tabla-productos tr:nth-child(even) {
-    background-color: #e6f0ff;
+/*------------------ FOOTER -----------------------*/
+/*Redes sociales e informacion de contacto*/
+
+footer {
+    align-items: center;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-/*------------------ FOOTER -----------------------*/
-footer {
-    background-color: #333; 
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    flex-wrap: wrap; 
-}
 footer ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 footer ul li {
-    margin: 5px 0;
     font-size: 16px;
+    margin: 5px 0;
 }
+
 
