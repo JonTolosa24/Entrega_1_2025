@@ -131,67 +131,61 @@ body {
     color: white;
 }
 
-/*contenido principal de la pagina*/
+/*------contenido principal de la pagina-----*/
 
 
-/* Estilo principal para los artículos */
+
 #contenido_principal {
     flex: 5;
     margin: 20px;
     padding: 20px 0;
 }
 
-/* Diseño de los artículos: alineación de imagen y texto */
 #contenido_principal article {
     display: flex;
-    align-items: center; /* Alinea la imagen y el texto a la misma altura */
-    justify-content: center; /* Centra el contenido del artículo */
-    text-align: justify; /* Justifica el texto dentro del artículo */
+    align-items: center; 
+    justify-content: center; 
+    text-align: justify; 
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-/* Estilos de los títulos (headers) dentro de los artículos */
+
 #contenido_principal header h2 {
-    color: #007bff; /* Títulos en color azul */
+    color: #007bff; 
     font-size: 24px;
     margin-bottom: 20px;
-    text-align: center; /* Centra los títulos */
+    text-align: center; 
 }
 
-/* Estilo de la imagen banner (debe ser centrada) */
 .img_banner {
     width: 100%;
     height: auto;
     display: block;
-    margin: 20px auto; /* Centra la imagen */
+    margin: 20px auto; 
     border-radius: 10px;
 }
 
-/* Estilo para las imágenes dentro de los artículos */
 .img_derecha, .img_izquierda {
-    width: 250px; /* Ajusta el tamaño de las imágenes */
+    width: 250px;
     height: auto;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px;
 }
 
-/* Imagen de automatización a la derecha */
 .img_derecha {
-    order: 2; /* La imagen se coloca a la derecha */
-    margin-left: 20px; /* Espacio entre el texto y la imagen */
+    order: 2; 
+    margin-left: 20px; 
 }
 
-/* Imagen de sostenibilidad a la izquierda */
 .img_izquierda {
-    order: -1; /* La imagen se coloca a la izquierda */
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    order: -1; 
+    margin-right: 20px; 
 }
 
-/* Asegura que el artículo con imágenes esté bien alineado */
 #contenido_principal article img {
-    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+    vertical-align: middle; 
 }
 
 
