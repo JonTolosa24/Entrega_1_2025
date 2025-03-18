@@ -21,7 +21,8 @@ body {
 
 }
 
-/*navegación de paginas dentro del header*/
+/*-----navegación de paginas dentro del header------*/
+/*Para navegar por las ventanas de la pagina web*/
 
 .barra_navegacion {
     text-align: center;
@@ -62,7 +63,7 @@ body {
 }
 
 
-/*buscador de la pagina en el heaer*/
+/*----------buscador de la pagina en el header------*/
 .buscador {
     padding: 10px;
     text-align: center;
@@ -88,18 +89,69 @@ body {
     border-color: #007bff; 
 }
 
+/*-------------------Medias Queries (Responsive Design)-------------------*/
+
+@media screen and (max-width: 768px) {
+    .indice {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .img_logo {
+        width: 100px; /* Reducir tamaño del logo en pantallas más pequeñas */
+    }
+    
+    .barra_navegacion ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .barra_navegacion ul li {
+        margin: 10px 0;
+    }
+
+    .buscador input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+        
+    .img_logo {
+        width: 80px;
+    }
+    
+    .barra_navegacion ul li {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .buscador input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .indice {
+        padding: 10px;
+    }
+}
+
 /*----------------------------MAIN------------------------*/
 #contenido_main{
     display: inline-flex;
     width: 100%;
 }
 
-/*lista lateral*/
+/*-------------lista lateral---------*/
+/*Para navegar entre los componentes y tendencias de SMC*/
 #contenido_lateral {
     color: rgb(77, 77, 77);
     background-color: #f4f4f4;
     padding: 15px;
-    flex: 1; /*revisar!!!!!!!!!!!!!!!!!*/
+    flex: 1; 
     display: flex;
     flex-direction: column;
 }
@@ -114,7 +166,7 @@ body {
     background-color: #ddd;
     padding: 10px;
     margin: 5px 0;
-    border-radius: 5px; /*borde redondeado*/
+    border-radius: 5px; /*borde redondeado con un radio de 5px en este caso*/
     text-align: center;
 }
 
@@ -131,8 +183,8 @@ body {
     color: white;
 }
 
-/*------contenido principal de la pagina-----*/
-
+/*--------contenido principal de la pagina---------*/
+/*Articulos con textos e imagenes de la pagina principal*/
 
 
 #contenido_principal {
@@ -191,7 +243,7 @@ body {
 
 
 
-/* ----------------------contenido principal de PRODUCTOS--------------------*/
+/* ----------------------Contenido principal de PRODUCTOS--------------------*/
 #contenido_principal_producto {
     align-items: center;
     flex: 5;
@@ -244,7 +296,7 @@ body {
     }
 }
 
-/* ----------------------contenido principal de FORMULARIO--------------------*/
+/* ----------------------Contenido principal de FORMULARIO--------------------*/
 #contenido_principal_formulario {
     align-items: center;
     flex: 5;
@@ -298,7 +350,7 @@ body {
     background-color: #0056b3;
 }
 
-/*----------------USUARIOS-----------------*/
+/*----------------Contenido principal de USUARIOS-----------------*/
 
 #contenido_principal_usuarios {
     align-items: center;
@@ -363,15 +415,14 @@ body {
 
 /*------------------ FOOTER -----------------------*/
 footer {
-    background-color: #333; /* Fondo oscuro */
+    background-color: #333; 
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: space-between; /* Espaciado entre las secciones */
+    justify-content: space-between; 
     align-items: center;
-    flex-wrap: wrap; /* Permite que se acomode en pantallas pequeñas */
+    flex-wrap: wrap; 
 }
-
 footer ul {
     list-style: none;
     padding: 0;
