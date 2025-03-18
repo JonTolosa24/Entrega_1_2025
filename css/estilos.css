@@ -244,6 +244,61 @@ body {
     }
 }
 
+/* ----------------------contenido principal de FORMULARIO--------------------*/
+#contenido_principal_formulario {
+    align-items: center;
+    flex: 5;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    width: 70%;
+    color: rgb(77, 77, 77);
+}
+
+#contenido_principal_formulario h2 {
+    text-align: center;
+    color: #007bff;
+    font-size: 20px;
+}
+
+#contenido_principal_formulario label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+#contenido_principal_formulario input{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contenido_principal_formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contenido_principal_formulario button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contenido_principal_formulario button:hover {
+    background-color: #0056b3;
+}
+
+
 
 
 /*------------------ FOOTER -----------------------*/
