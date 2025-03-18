@@ -13,7 +13,7 @@ body {
 
 .indice {
     align-items: center;
-    background-color: rgb(238, 237, 237);
+    background-color: #ddd;
     display: flex;
     justify-content: space-between;
     padding: 5px;
@@ -54,7 +54,7 @@ body {
 .barra_navegacion ul li a:hover {
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-underline-offset: 3px;
+    text-underline-offset: 22px;
 }
 
 .barra_navegacion ul li.seleccionado a {
@@ -99,7 +99,7 @@ body {
     color: rgb(77, 77, 77);
     background-color: #f4f4f4;
     padding: 15px;
-    flex: 1;
+    flex: 1; /*revisar!!!!!!!!!!!!!!!!!*/
     display: flex;
     flex-direction: column;
 }
@@ -118,28 +118,128 @@ body {
     text-align: center;
 }
 
+#lista_lateral li a{
+    color: rgb(77, 77, 77);
+    text-decoration: none;
+}
+
 #lista_lateral li:hover {
     background-color: #007bff;
+}
+
+#lista_lateral li a:hover{
     color: white;
 }
 
 /*contenido principal de la pagina*/
-#contenido_principal{
-    color: rgb(77, 77, 77);
+
+
+/* Estilo principal para los artículos */
+#contenido_principal {
     flex: 5;
+    margin: 20px;
+    padding: 20px 0;
+}
+
+/* Diseño de los artículos: alineación de imagen y texto */
+#contenido_principal article {
+    display: flex;
+    align-items: center; /* Alinea la imagen y el texto a la misma altura */
+    justify-content: center; /* Centra el contenido del artículo */
+    text-align: justify; /* Justifica el texto dentro del artículo */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los títulos (headers) dentro de los artículos */
+#contenido_principal header h2 {
+    color: #007bff; /* Títulos en color azul */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* Centra los títulos */
+}
+
+/* Estilo de la imagen banner (debe ser centrada) */
+.img_banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centra la imagen */
+    border-radius: 10px;
+}
+
+/* Estilo para las imágenes dentro de los artículos */
+.img_derecha, .img_izquierda {
+    width: 250px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Imagen de automatización a la derecha */
+.img_derecha {
+    order: 2; /* La imagen se coloca a la derecha */
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+}
+
+/* Imagen de sostenibilidad a la izquierda */
+.img_izquierda {
+    order: -1; /* La imagen se coloca a la izquierda */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Asegura que el artículo con imágenes esté bien alineado */
+#contenido_principal article img {
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+}
+
+
+
+
+/* ----------------------contenido principal de PRODUCTOS--------------------*/
+
+.img_productos {
+    width: 400px;  
+    height: 400px; 
+    border: 3px solid #007bff; 
+    border-radius: 5px;
+}
+
+#dos_articulos {
+    display: flex;
+}
+
+#dos_articulos section {
+    flex: 1;
     margin: 10px;
 }
 
-#contenido_principal article{
-    text-align: justify;
+
+
+
+/*------------------ FOOTER -----------------------*/
+footer {
+    background-color: #333; /* Fondo oscuro */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Espaciado entre las secciones */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que se acomode en pantallas pequeñas */
 }
 
-.img_banner{
-    width: 100%;
-    height: 170px;
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
+footer ul li {
+    margin: 5px 0;
+    font-size: 16px;
+}
 
-
-
-
+#redes_sociales li {
+    font-weight: bold;
+}
